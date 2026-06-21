@@ -6,8 +6,9 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
-    "start": "node dist/index.js"
+    "dev": "ts-node-dev --esm --respawn --transpile-only src/index.ts",
+    "start": "node dist/index.js",
+    "seed": "ts-node --esm --transpile-only src/scripts/seed.ts"
   },
   "dependencies": {
     "express": "^4.18.2",
