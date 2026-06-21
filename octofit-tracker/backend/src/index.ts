@@ -1,10 +1,10 @@
 import express from 'express';
 import mongoose from 'mongoose';
-import usersRouter from './routes/users.ts';
-import teamsRouter from './routes/teams.ts';
-import activitiesRouter from './routes/activities.ts';
-import leaderboardRouter from './routes/leaderboard.ts';
-import workoutsRouter from './routes/workouts.ts';
+import usersRouter from './routes/users.js';
+import teamsRouter from './routes/teams.js';
+import activitiesRouter from './routes/activities.js';
+import leaderboardRouter from './routes/leaderboard.js';
+import workoutsRouter from './routes/workouts.js';
 
 const app = express();
 const port = Number(process.env.PORT || 8000);
